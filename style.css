@@ -175,56 +175,92 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.about-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
-    gap: 40px;
+/* Contact Section */
+.contact-section {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  padding: 60px 20px;
 }
 
-.about-image img {
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-container .subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Contact Info */
+.contact-info {
+  flex: 1 1 300px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.contact-info h3 {
+  margin-bottom: 15px;
+  color: #e85a4f;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #e85a4f;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 8px;
+  font-size: 1.2rem;
+  color: #e85a4f;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #007bff;
+    position: absolute;
+    top: 60px;
+    right: 0;
     width: 100%;
-    max-width: 500px;
-    border-radius: 20px;
-    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
+    text-align: center;
+  }
 
-.about-image img:hover {
-    transform: scale(1.05);
-}
+  .nav-links.active {
+    display: flex;
+  }
 
-.about-content {
-    flex: 1;
-    min-width: 280px;
-}
-
-.about-content h2 {
-    font-size: 36px;
-    color: #ff6600;
-    margin-bottom: 15px;
-}
-
-.about-content p {
-    color: #444;
-    font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 15px;
-}
-
-.about-btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #ff6600;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: background 0.3s ease;
-}
-
-.about-btn:hover {
-    background-color: #e65500;
+  .menu-icon {
+    display: block;
+  }
 }
